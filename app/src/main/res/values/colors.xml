@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#cc3835</color>
+    <color name="colorPrimaryDark">#702e24</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="viewSongBackground">#f5e9da</color>
+</resources>

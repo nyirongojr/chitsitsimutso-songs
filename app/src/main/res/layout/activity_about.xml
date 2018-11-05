@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jnrnyirongo.chitsitsimutso.About">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="App Info"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2sp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/appName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Name        : Chitsitsimutso songs"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/appLanguage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Language : Chichewa &amp; Chitumbuka"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/appVersion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Version     : v 1.0.0"
+                android:layout_marginBottom="5dp"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/abouApp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="@string/aboutApp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/shalom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:fontFamily="serif"
+                android:text="******* Shalom to the bride *******"
+                android:textSize="15sp" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Developer"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2sp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/appDeveloper"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="@string/developer"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Contact"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2sp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/appContact"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="@string/contact"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/gmailCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="10dp">
+
+                    <ImageView
+                        android:id="@+id/gmailButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/gmail" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/facebookCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="10dp">
+
+                    <ImageView
+                        android:id="@+id/facebookButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/facebook" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/whatsappCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="10dp">
+
+                    <ImageView
+                        android:id="@+id/watsappButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        app:srcCompat="@drawable/wap" />
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

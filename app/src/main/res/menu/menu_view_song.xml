@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="Search"
+        android:icon="@drawable/ic_search"
+        android:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_favourite"
+        android:orderInCategory="101"
+        android:title="Add to favourite"
+        android:icon="@drawable/ic_favorite"
+        app:showAsAction="always"></item>
+
+
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="102"
+        android:title="@string/action_share"
+        android:icon="@drawable/ic_share"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="1033"
+        android:title="@string/about"
+        app:showAsAction="never" />
+
+    <!--
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="103"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    -->
+
+</menu>

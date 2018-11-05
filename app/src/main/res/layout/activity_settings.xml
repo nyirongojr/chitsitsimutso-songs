@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.jnrnyirongo.chitsitsimutso.Settings">
+
+
+    <LinearLayout
+        android:id="@+id/layout_for_fonts"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="15dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Set Font size"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="2sp"
+                android:background="@color/colorPrimary" />
+
+            <Spinner
+                android:id="@+id/spinner_font_size"
+                style="@style/AppTheme.AppBarOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ece6ec"
+                android:fontFamily="monospace"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Change Reading Mode"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="2sp"
+                android:background="@color/colorPrimary" />
+
+            <Spinner
+                android:id="@+id/spinner_read_mode"
+                style="@style/AppTheme.AppBarOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ece6ec"
+                android:fontFamily="monospace"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
